@@ -4,3 +4,21 @@ from-root==1.0.2
 pymongo==4.0.2
 wincertstore==0.2
 -e .
+certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
+dill==0.3.6
+dnspython==2.2.1
+from-root==1.0.2
+joblib==1.2.0
+numpy==1.23.4
+pandas==1.5.1
+pymongo==4.0.2
+python-dateutil==2.8.2
+pytz==2022.6
+PyYAML==6.0
+scikit-learn==1.1.3
+scipy==1.9.3
+-e git+https://github.com/Nihal-67/car-sensor-fault-detection.git@9e43a39aa0c6851b2037664a05532de824dc565b#egg=sensor
+six==1.16.0
+sklearn==0.0
+threadpoolctl==3.1.0
+wincertstore==0.2

@@ -4,8 +4,8 @@ import os,sys
 from sensor.logger import logging
 import os
 from sensor.entity.config_entity import TrainingPipelineConfig, DataIngestionConfig
+from sensor.pipeline.training_pipeline import TrainPipeline
 
 if __name__ == '__main__':
-    training_pipeline_config = TrainingPipelineConfig()
-    data_ingetion_config = DataIngestionConfig(training_pipeline_config=training_pipeline_config)
-    print(data_ingetion_config.__dict__)
+    training_pipeline= TrainPipeline()
+    training_pipeline.run_pipeline()
