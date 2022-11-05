@@ -1,2 +1,6 @@
 pymongo[srv]==4.0.2
+dnspython==2.2.1
+from-root==1.0.2
+pymongo==4.0.2
+wincertstore==0.2
 -e .
