@@ -7,7 +7,7 @@ import json
 from sensor.configuration.mongodb_connection import MongoDBClient
 from sensor.constant.training_pipeline.database import DATABASE_NAME
 from sensor.exception import SensorException
-
+from sensor.logger import logging
 
 class SensorData:
     """
@@ -46,9 +46,12 @@ class SensorData:
             export entire collectin as dataframe:
             return pd.DataFrame of collection
             """
+            logging.info("inserting in if part of sensor_data.py")
             if database_name is None:
                 collection = self.mongo_client.database[collection_name]
+                logging.info(f'collection name is {collection_name}')
             else:
+                logging.info("inserting in else part of logging")
                 collection = self.mongo_client[database_name][collection_name]
             df = pd.DataFrame(list(collection.find()))
 
